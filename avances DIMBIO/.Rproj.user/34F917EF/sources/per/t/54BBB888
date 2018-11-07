@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1541346561112.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2251266158",
+    "id" : "54BBB888",
+    "lastKnownWriteTime" : 1541354048,
+    "last_content_update" : 1541354048966,
+    "path" : "~/tesis/Packege dimbio/DIMBIO/R/Univariantes.R",
+    "project_path" : "R/Univariantes.R",
+    "properties" : {
+        "cursorPosition" : "19,73",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

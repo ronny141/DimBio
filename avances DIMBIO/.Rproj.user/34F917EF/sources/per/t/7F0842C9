@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1541357255667.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "21470837",
+    "id" : "7F0842C9",
+    "lastKnownWriteTime" : 1541357377,
+    "last_content_update" : 1541357377085,
+    "path" : "~/tesis/Packege dimbio/DIMBIO/R/Manhattan.R",
+    "project_path" : "R/Manhattan.R",
+    "properties" : {
+        "cursorPosition" : "4,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

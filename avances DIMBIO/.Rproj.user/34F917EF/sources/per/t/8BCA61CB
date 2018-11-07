@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1541364128735.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "8BCA61CB",
+    "lastKnownWriteTime" : 2484628534807494656,
+    "last_content_update" : 1541364128735,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "44AE5F92",
+        "caption" : "pro_exp_sim",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=pro_exp_sim&cache_key=44AE5F92",
+        "displayedObservations" : 3,
+        "environment" : "",
+        "object" : "pro_exp_sim",
+        "preview" : 0,
+        "totalObservations" : 3,
+        "variables" : 3
+    },
+    "relative_order" : 13,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

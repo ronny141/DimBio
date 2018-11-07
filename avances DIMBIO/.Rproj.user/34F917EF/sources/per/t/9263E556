@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1541363843829.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "9263E556",
+    "lastKnownWriteTime" : 8389754659302220320,
+    "last_content_update" : 1541363843829,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "F842E4F7",
+        "caption" : "sim_var_cov",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=sim_var_cov&cache_key=F842E4F7",
+        "displayedObservations" : "3",
+        "environment" : "",
+        "object" : "sim_var_cov",
+        "preview" : "0",
+        "totalObservations" : "3",
+        "variables" : "3"
+    },
+    "relative_order" : 11,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

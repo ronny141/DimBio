@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1541364055761.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "81968AB9",
+    "lastKnownWriteTime" : 3419473789575321445,
+    "last_content_update" : 1541364055761,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "301B7771",
+        "caption" : "mat_inv",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=mat_inv&cache_key=301B7771",
+        "displayedObservations" : "3",
+        "environment" : "",
+        "object" : "mat_inv",
+        "preview" : "0",
+        "totalObservations" : "3",
+        "variables" : "3"
+    },
+    "relative_order" : 12,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
