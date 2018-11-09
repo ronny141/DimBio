@@ -5,7 +5,7 @@ datos <- read.table("C:/Users/Ronny/Documents/tesis/ejecucion/Datos.txt",header=
 #Datos Reales
 Reales <- data.frame(datos$CBM, datos$NBM, datos$ResAcum, datos$Nmin)
 #Reales
- 
+
 #Datos Simulados
 Simulados <- data.frame(datos$CBMs, datos$NBMs, datos$ResAcums, datos$Nmins)
 #Simulados
@@ -31,7 +31,7 @@ prologReales <- c(colMeans(logReales))
 #prologReales
 
 #logReales - prologReales
-restaRealeslog <- sweep(logReales,2,prologReales) 
+restaRealeslog <- sweep(logReales,2,prologReales)
 #restaRealeslog
 
 #///////
@@ -44,7 +44,7 @@ prologSimulados <- c(colMeans(logSimulados))
 #prologSimulados
 
 #logReales - prologSimulados
-restaSimuladoslog <- sweep(logSimulados,2,prologSimulados) 
+restaSimuladoslog <- sweep(logSimulados,2,prologSimulados)
 #restaSimuladoslog
 
 #Experimetal Varianza and Covarianza
@@ -65,7 +65,7 @@ for(i in 1:dim(restaRealeslog)[2]){
   }
 }
 
-exp_var_cov <- matrix(ve,nrow=4,byrow=T) 
+exp_var_cov <- matrix(ve,nrow=4,byrow=T)
 #exp_var_cov
 
 #Simulado Varianza and Covarianza
@@ -73,7 +73,7 @@ for(i in 1:dim(restaSimuladoslog)[2]){
   for(j in 1:dim(restaSimuladoslog)[2]){
     if(i == j) {
       if(i == 1 & j == 1){
-        aux <- var(restaSimuladoslog[i]) 
+        aux <- var(restaSimuladoslog[i])
         ve <- aux
       }else{
         aux <- var(restaSimuladoslog[i])
@@ -86,7 +86,7 @@ for(i in 1:dim(restaSimuladoslog)[2]){
   }
 }
 
-sim_var_cov <- matrix(ve,nrow=4,byrow=T) 
+sim_var_cov <- matrix(ve,nrow=4,byrow=T)
 #sim_var_cov
 
 #Promedio Experimental Simulado
@@ -103,5 +103,5 @@ subpro <- matrix(prologReales - prologSimulados)
 
 #Primer paso de la multiplicacion
 mahalanobis <- sqrt((t(subpro) %*% mat_inv) %*% subpro)
-mahalanobis
+as.numeric(mahalanobis)
 
