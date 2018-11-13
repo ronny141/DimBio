@@ -2,20 +2,20 @@
 % Please edit documentation in R/Univariantes.R
 \name{Univariantes}
 \alias{Univariantes}
-\title{Calcula Estadisticos Univariantes}
+\title{This function calculate statistics Univariant}
 \usage{
-Univariantes(Reales, Simulados, nombre_variable = NULL)
+Univariantes(Reals, Simulateds, names_variables = NULL)
 }
 \arguments{
-\item{Reales}{dataFrame datos Reles}
+\item{Reals}{data frame with real data}
 
-\item{Simulados}{dataFrame datos Simulados}
+\item{Simulateds, }{data frame with simulated data}
 
-\item{nombre_variable}{vector de nombres de variables, opcional}
+\item{names_variables}{variable names vector, optional}
 }
 \value{
-R^2, pearson, %RMSE, t-student, NS, MSEP, RMSEP, MAE, %MAE, U, MC, SC, RC, MV, AIC, bayes entre \code{Reales} and \code{Simulados}.
+R^2, pearson, %RMSE, t-student, NS, MSEP, RMSEP, MAE, %MAE, U, MC, SC, RC, MV, AIC, bayes entre \code{Reals} and \code{Simulateds}.
 }
 \description{
-Calcula Estadisticos Univariantes
+This function calculate statistics Univariant
 }

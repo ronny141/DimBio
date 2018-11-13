@@ -1,14 +1,14 @@
-#' Calcula distancia Manhattan
+#' This function calculate the distance Manhattan
 #'
-#' @param Reales dataFrame datos Reles
-#' @param Simulados dataFrame datos Simulados
-#' @return Distancia Manhattan entre \code{Reales} and \code{Simulados}.
+#' @param Reals data frame with real data
+#' @param Simulateds, data frame with simulated data
+#' @return Distance Manhattan between \code{Reals} and \code{Simulateds}.
 #' @export
-Manhattan <- function(Reales, Simulados){
-  if((dim(Reales)[1] == dim(Simulados)[1]) && (dim(Reales)[2] == dim(Simulados)[2])){
-    manhattan <- mean(colSums(abs(Reales-Simulados)))
+Manhattan <- function(Reals, Simulateds){
+  if((dim(Reals)[1] == dim(Simulateds)[1]) && (dim(Reals)[2] == dim(Simulateds)[2])){
+    manhattan <- mean(colSums(abs(Reals-Simulateds)))
     return(manhattan)
   }else{
-    return("Dimensión de los dataFrames diferentes")
+    return("Dimention of data frames is different")
   }
 }

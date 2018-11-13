@@ -2,18 +2,18 @@
 % Please edit documentation in R/Manhattan.R
 \name{Manhattan}
 \alias{Manhattan}
-\title{Calcula distancia Manhattan}
+\title{This function calculate the distance Manhattan}
 \usage{
-Manhattan(Reales, Simulados)
+Manhattan(Reals, Simulateds)
 }
 \arguments{
-\item{Reales}{dataFrame datos Reles}
+\item{Reals}{data frame with real data}
 
-\item{Simulados}{dataFrame datos Simulados}
+\item{Simulateds, }{data frame with simulated data}
 }
 \value{
-Distancia Manhattan entre \code{Reales} and \code{Simulados}.
+Distance Manhattan between \code{Reals} and \code{Simulateds}.
 }
 \description{
-Calcula distancia Manhattan
+This function calculate the distance Manhattan
 }

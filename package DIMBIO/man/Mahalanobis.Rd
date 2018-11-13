@@ -2,18 +2,18 @@
 % Please edit documentation in R/Mahalanobis.R
 \name{Mahalanobis}
 \alias{Mahalanobis}
-\title{Calcula distancia Mahalabonis}
+\title{This function calculate the distance Mahalabonis}
 \usage{
-Mahalanobis(Reales, Simulados)
+Mahalanobis(Reals, Simulateds)
 }
 \arguments{
-\item{Reales}{dataFrame datos Reles}
+\item{Reals}{data frame with real data}
 
-\item{Simulados}{dataFrame datos Simulados}
+\item{Simulateds, }{data frame with simulated data}
 }
 \value{
-Distancia Mahalanobis entre \code{Reales} and \code{Simulados}.
+Distance Mahalabonis between \code{Reals} and \code{Simulateds}.
 }
 \description{
-Calcula distancia Mahalabonis
+This function calculate the distance Mahalabonis
 }

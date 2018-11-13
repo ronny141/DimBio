@@ -2,18 +2,18 @@
 % Please edit documentation in R/Euclidiana.R
 \name{Euclidiana}
 \alias{Euclidiana}
-\title{Calcula distancia Mahalabonis}
+\title{This function calculate the distance euclidiana}
 \usage{
-Euclidiana(Reales, Simulados)
+Euclidiana(Reals, Simulateds)
 }
 \arguments{
-\item{Reales}{dataFrame datos Reles}
+\item{Reals}{data frame with real data}
 
-\item{Simulados}{dataFrame datos Simulados}
+\item{Simulateds, }{data frame with simulated data}
 }
 \value{
-Distancia Euclidiana entre \code{Reales} and \code{Simulados}.
+Distance euclidiana between \code{Reals} and \code{Simulateds}.
 }
 \description{
-Calcula distancia Mahalabonis
+This function calculate the distance euclidiana
 }

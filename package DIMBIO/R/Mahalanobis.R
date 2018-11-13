@@ -1,50 +1,50 @@
-#' Calcula distancia Mahalabonis
+#' This function calculate the distance Mahalabonis
 #'
-#' @param Reales dataFrame datos Reles
-#' @param Simulados dataFrame datos Simulados
-#' @return Distancia Mahalanobis entre \code{Reales} and \code{Simulados}.
+#' @param Reals data frame with real data
+#' @param Simulateds, data frame with simulated data
+#' @return Distance Mahalabonis between \code{Reals} and \code{Simulateds}.
 #' @export
 
-Mahalanobis <- function(Reales, Simulados){
+Mahalanobis <- function(Reals, Simulateds){
 
-  if((dim(Reales)[1] == dim(Simulados)[1]) && (dim(Reales)[2] == dim(Simulados)[2])){
-    lon <- dim(Reales)[2]
+  if((dim(Reals)[1] == dim(Simulateds)[1]) && (dim(Reals)[2] == dim(Simulateds)[2])){
+    lon <- dim(Reals)[2]
 
-    proReales <- c(colMeans(Reales))
+    proReals <- c(colMeans(Reals))
 
-    restaReales <- sweep(Reales,2,proReales)
-    proSimulados <- c(colMeans(Simulados))
-    restaSimulados <- sweep(Simulados,2,proSimulados)
-    for(i in 1:dim(restaReales)[2]){
-      for(j in 1:dim(restaReales)[2]){
+    restaReals <- sweep(Reals,2,proReals)
+    proSimulateds <- c(colMeans(Simulateds))
+    restaSimulateds <- sweep(Simulateds,2,proSimulateds)
+    for(i in 1:dim(restaReals)[2]){
+      for(j in 1:dim(restaReals)[2]){
         if(i == j) {
           if(i == 1 & j == 1){
-            aux <- var(restaReales[i])
+            aux <- var(restaReals[i])
             ve <- aux
           }else{
-            aux <- var(restaReales[i])
+            aux <- var(restaReals[i])
             ve <- cbind(ve,aux)
           }
         }else{
-          aux <- cov(restaReales[i], restaReales[j])
+          aux <- cov(restaReals[i], restaReals[j])
           ve <- cbind(ve, aux)
         }
       }
     }
 
     exp_var_cov <- matrix(ve,nrow=lon,byrow=T)
-    for(i in 1:dim(restaSimulados)[2]){
-      for(j in 1:dim(restaSimulados)[2]){
+    for(i in 1:dim(restaSimulateds)[2]){
+      for(j in 1:dim(restaSimulateds)[2]){
         if(i == j) {
           if(i == 1 & j == 1){
-            aux <- var(restaSimulados[i])
+            aux <- var(restaSimulateds[i])
             ve <- aux
           }else{
-            aux <- var(restaSimulados[i])
+            aux <- var(restaSimulateds[i])
             ve <- cbind(ve,aux)
           }
         }else{
-          aux <- cov(restaSimulados[i], restaSimulados[j])
+          aux <- cov(restaSimulateds[i], restaSimulateds[j])
           ve <- cbind(ve, aux)
         }
       }
@@ -53,11 +53,11 @@ Mahalanobis <- function(Reales, Simulados){
     sim_var_cov <- matrix(ve,nrow=lon,byrow=T)
     pro_exp_sim <- (exp_var_cov + sim_var_cov)/2
     mat_inv <- solve(pro_exp_sim)
-    subpro <- matrix(proReales - proSimulados)
+    subpro <- matrix(proReals - proSimulateds)
     mahalanobis <- sqrt((t(subpro) %*% mat_inv) %*% subpro)
     return(as.numeric(mahalanobis))
   }else{
-    return("Dimesión de los dataFrames diferentes")
+    return("Dimention of data frames is different")
   }
 
 }
